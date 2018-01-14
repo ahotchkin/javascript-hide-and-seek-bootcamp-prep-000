@@ -12,7 +12,12 @@ function nestedTarget() {
 //   let currentChild = array;
 //   let next = [];
 //   const deepest = document.querySelector('#grand-node').querySelectorAll('currentChild');
-//
+
+
+
+//    grand-node is under app
+
+
 //   while (currentChild) {
 //     if (currentChild != null){
 //       return currentChild;
