@@ -8,10 +8,10 @@ function nestedTarget() {
   return target
 }
 
-// function deepestChild() {
-//   let currentChild = array;
-//   let next = [];
-//   const deepest = document.querySelector('#grand-node').querySelectorAll('currentChild');
+function deepestChild() {
+  let currentChild = array;
+  let next = [];
+  const deepest = document.getElementById('app').querySelectorAll('div#grand-node');
 
 
 
