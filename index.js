@@ -37,7 +37,7 @@ function increaseRankBy(n) {
   const increaseRank = document.getElementById('app').querySelectorAll('ul.ranked-list li');
 
   for (let i = 0; i < increaseRank.length; i++) {
-    return parseInt(increaseRank[i].innerHTML + n);
+    return parseInt(increaseRank[i].innerHTML + 1 + n);
   }
 
 }
