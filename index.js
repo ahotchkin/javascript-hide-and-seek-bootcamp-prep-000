@@ -4,7 +4,7 @@ function getFirstSelector(selector) {
 }
 
 function nestedTarget() {
-  const target = document.querySelector('#nested').querySelector('.target');
+  const target = document.getElementById('app').querySelectorAll('div#grand-node');
   return target
 }
 
