@@ -11,15 +11,11 @@ function nestedTarget() {
 function deepestChild() {
   // let currentChild = array;
   // let next = [];
-  const deepest = document.getElementById('app').querySelectorAll('div#grand-node');
+  const deepest = document.querySelector('#grand-node').querySelectorAll('*');
 
   return deepest
 
 }
-
-
-
-//    grand-node is under app
 
 
 //   while (currentChild) {
