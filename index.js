@@ -9,34 +9,20 @@ function nestedTarget() {
 }
 
 function deepestChild() {
-  // let currentChild = array;
-  // let next = [];
-  const deepest = document.querySelector('#grand-node').querySelectorAll('*');
 
-  return deepest[deepest.length - 1]
+  const grandNode = document.querySelector('div#grand-node')
+
+  while (grandNode.querySelector('div')) {
+    grandNode = grandNode.querySelector('div')
+  }
+
+  return grandNode
+  // const deepest = document.querySelector('#grand-node').querySelectorAll('*');
+  //
+  // return deepest[deepest.length - 1]
 
 }
 
-
-//   while (currentChild) {
-//     if (currentChild != null){
-//       return currentChild;
-//     }
-//
-//     if (Array.isArray(currentChild)){
-//       for (let i=0; i < currentChild.length; i++) {
-//         next.push(currentChild[i])
-//       }
-//
-//       currentChild = next.shift();
-//
-//     }
-//
-//     return null
-//
-//   }
-//
-// }
 
 function increaseRankBy(n) {
   const rank = document.getElementById('app').querySelectorAll('ul.ranked-list');
