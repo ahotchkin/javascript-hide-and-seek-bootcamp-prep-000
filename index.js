@@ -13,7 +13,7 @@ function deepestChild() {
   // let next = [];
   const deepest = document.querySelector('#grand-node').querySelectorAll('*');
 
-  return deepest
+  return deepest.length - 1
 
 }
 
