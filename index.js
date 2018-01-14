@@ -10,17 +10,9 @@ function nestedTarget() {
 
 function deepestChild() {
 
-  const grandNode = document.querySelector('div#grand-node')
+  const deepest = document.querySelector('#grand-node').querySelectorAll('*');
 
-  const current = grandNode
-  while (current.querySelector('div')) {
-    current = current.querySelector('div')
-  }
-
-  return grandNode
-  // const deepest = document.querySelector('#grand-node').querySelectorAll('*');
-  //
-  // return deepest[deepest.length - 1]
+  return deepest[deepest.length - 1]
 
 }
 
