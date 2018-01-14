@@ -43,8 +43,8 @@ function increaseRankBy(n) {
 
   return parseInt(rank.innerHTML + n)
 
-  // for (let i = 0; i < increaseRank.length; i++) {
-  //   return parseInt(increaseRank[i].innerHTML + n);
+  // for (let i = 0; i < rank.length; i++) {
+  //   return parseInt(rank[i].innerHTML + n);
   // }
 
 }
