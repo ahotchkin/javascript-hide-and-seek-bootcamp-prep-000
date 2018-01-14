@@ -13,6 +13,8 @@ function deepestChild() {
   let next = [];
   const deepest = document.getElementById('app').querySelectorAll('div#grand-node');
 
+  return deepest
+
 
 
 //    grand-node is under app
