@@ -12,8 +12,9 @@ function deepestChild() {
 
   const grandNode = document.querySelector('div#grand-node')
 
-  while (grandNode.querySelector('div')) {
-    grandNode = grandNode.querySelector('div')
+  const current = grandNode
+  while (current.querySelector('div')) {
+    current = current.querySelector('div')
   }
 
   return grandNode
