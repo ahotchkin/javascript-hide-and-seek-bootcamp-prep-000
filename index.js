@@ -12,25 +12,25 @@ function nestedTarget() {
 //   let currentChild = array;
 //   let next = [];
 //   const deepest = document.querySelector('#grand-node').querySelectorAll('currentChild');
-// 
+//
 //   while (currentChild) {
 //     if (currentChild != null){
 //       return currentChild;
 //     }
-// 
+//
 //     if (Array.isArray(currentChild)){
 //       for (let i=0; i < currentChild.length; i++) {
 //         next.push(currentChild[i])
 //       }
-// 
+//
 //       currentChild = next.shift();
-// 
+//
 //     }
-// 
+//
 //     return null
-// 
+//
 //   }
-// 
+//
 // }
 
 function increaseRankBy(n) {
