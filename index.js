@@ -8,36 +8,36 @@ function nestedTarget() {
   return target
 }
 
-function deepestChild() {
-  let currentChild = array;
-  let next = [];
-  const deepest = document.querySelector('#grand-node').querySelectorAll('currentChild');
+// function deepestChild() {
+//   let currentChild = array;
+//   let next = [];
+//   const deepest = document.querySelector('#grand-node').querySelectorAll('currentChild');
+// 
+//   while (currentChild) {
+//     if (currentChild != null){
+//       return currentChild;
+//     }
+// 
+//     if (Array.isArray(currentChild)){
+//       for (let i=0; i < currentChild.length; i++) {
+//         next.push(currentChild[i])
+//       }
+// 
+//       currentChild = next.shift();
+// 
+//     }
+// 
+//     return null
+// 
+//   }
+// 
+// }
 
-  while (currentChild) {
-    if (currentChild != null){
-      return currentChild;
-    }
+function increaseRankBy(n) {
+  const increaseRank = document.getElementById('app').querySelectorAll('ul.ranked-list li');
 
-    if (Array.isArray(currentChild)){
-      for (let i=0; i < currentChild.length; i++) {
-        next.push(currentChild[i])
-      }
-
-      currentChild = next.shift();
-
-    }
-
-    return null
-
+  for (let i = 0; i < increaseRank.length; i++) {
+    return increaseRank[i].innerHTML = parseInt(i + n);
   }
 
 }
-
-// function increaseRankBy(n) {
-//   const increaseRank = document.getElementById('app').querySelectorAll('ul.ranked-list li');
-//
-//   for (let i = 0; i < increaseRank.length; i++) {
-//     return increaseRank[i].innerHTML = parseInt(i + n);
-//   }
-//
-// }
